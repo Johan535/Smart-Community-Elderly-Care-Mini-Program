@@ -1,0 +1,19 @@
+<view class="container elder-theme {{largeTextMode ? 'large-text' : ''}}">
+  <view class="role-banner">老人/家属端</view>
+  <view class="guide">可先报名活动，再发布互动内容，和其他用户交流心得。</view>
+  <view class="card">
+    <view class="title">活动查看与报名</view>
+    <input class="input" placeholder="互动内容发布" value="{{postContent}}" bindinput="onPostInput" />
+    <button class="btn" bindtap="publishPost">发布互动</button>
+    <block wx:for="{{activities}}" wx:key="id">
+      <view>{{item.title}} - {{item.activityTime}} - 报名{{item.signupCount}}人</view>
+      <button size="mini" data-id="{{item.id}}" bindtap="signup">报名</button>
+    </block>
+  </view>
+  <view class="card">
+    <view class="title">社交动态</view>
+    <block wx:for="{{posts}}" wx:key="id">
+      <view>{{item.content}}</view>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+<view class="container staff-theme">
+  <view class="role-banner">社区工作人员端</view>
+  <view class="guide">先核对老人档案并标记风险，再从下方入口进入管理模块。</view>
+  <view class="card">
+    <view class="title">老人信息管理（档案/风险/记录）</view>
+    <block wx:for="{{elders}}" wx:key="id">
+      <view>{{item.name}} - 风险: {{item.highRisk ? "高" : "低"}}</view>
+      <button size="mini" data-id="{{item.id}}" data-risk="{{!item.highRisk}}" bindtap="setRisk">风险标记切换</button>
+    </block>
+  </view>
+  <button class="btn" bindtap="goService">服务管理</button>
+  <button class="btn" bindtap="goActivity">活动管理</button>
+  <button class="btn" bindtap="goHelp">求助处理</button>
+  <button class="btn" bindtap="goStats">数据统计分析</button>
+</view>

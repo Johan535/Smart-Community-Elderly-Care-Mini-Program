@@ -1,0 +1,11 @@
+<view class="container staff-theme">
+  <view class="role-banner">社区工作人员端</view>
+  <view class="guide">收到求助后优先处理最新记录，处理完成后及时标记。</view>
+  <view class="card">
+    <view class="title">求助处理（实时接收/处理记录）</view>
+    <block wx:for="{{records}}" wx:key="id">
+      <view>{{item.createTime}} - {{item.message}} - {{item.status}}</view>
+      <button size="mini" data-id="{{item.id}}" bindtap="finish">标记已处理</button>
+    </block>
+  </view>
+</view>

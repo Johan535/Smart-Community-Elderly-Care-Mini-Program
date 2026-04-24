@@ -1,0 +1,14 @@
+<view class="container staff-theme">
+  <view class="role-banner">社区工作人员端</view>
+  <view class="guide">按“标题 → 时间 → 发布”活动流程操作，可减少重复录入。</view>
+  <view class="card">
+    <view class="title">活动管理（发布编辑/报名管理/导出）</view>
+    <input class="input" placeholder="活动标题" value="{{form.title}}" data-key="title" bindinput="onInput" />
+    <input class="input" placeholder="活动时间" value="{{form.activityTime}}" data-key="activityTime" bindinput="onInput" />
+    <button class="btn" type="primary" bindtap="publish">发布活动</button>
+    <button class="btn" bindtap="exportData">导出报名数据</button>
+    <block wx:for="{{activities}}" wx:key="id">
+      <view>{{item.title}} - 报名人数 {{item.signupCount}}</view>
+    </block>
+  </view>
+</view>

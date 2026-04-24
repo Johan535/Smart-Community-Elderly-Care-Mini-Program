@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/elder/personal/index",
+    "pages/elder/elder-switch/index",
+    "pages/elder/health/index",
+    "pages/elder/service/index",
+    "pages/elder/emergency-help/index",
+    "pages/elder/activity/index",
+    "pages/staff/archive-manage/index",
+    "pages/staff/service-manage/index",
+    "pages/staff/activity-manage/index",
+    "pages/staff/help-handle/index",
+    "pages/staff/stats/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "社区智慧养老服务",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "light"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

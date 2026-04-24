@@ -1,0 +1,16 @@
+<view class="container elder-theme {{largeTextMode ? 'large-text' : ''}}">
+  <view class="role-banner">老人/家属端</view>
+  <view class="guide">紧急情况下只需填写位置和求助信息后点击“一键求助”。</view>
+  <view class="card">
+    <view class="title">紧急求助</view>
+    <input class="input" placeholder="当前位置" value="{{location}}" bindinput="onLocation" />
+    <input class="input" placeholder="求助信息" value="{{message}}" bindinput="onMessage" />
+    <button class="btn" type="warn" bindtap="help">一键求助</button>
+  </view>
+  <view class="card">
+    <view class="title">求助记录</view>
+    <block wx:for="{{records}}" wx:key="id">
+      <view>{{item.createTime}} - {{item.status}} - {{item.message}}</view>
+    </block>
+  </view>
+</view>

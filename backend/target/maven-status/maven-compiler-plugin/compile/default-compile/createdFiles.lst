@@ -1,0 +1,15 @@
+com\community\elderly\controller\CommunityController.class
+com\community\elderly\model\DomainModels$EmergencyRecord.class
+com\community\elderly\repository\MemoryRepository.class
+com\community\elderly\security\RoleAuthInterceptor.class
+com\community\elderly\SmartElderlyApplication.class
+com\community\elderly\model\DomainModels$HealthRecord.class
+com\community\elderly\model\DomainModels$Elder.class
+com\community\elderly\config\WebMvcConfig.class
+com\community\elderly\model\DomainModels$ServiceOrder.class
+com\community\elderly\model\DomainModels$SocialPost.class
+com\community\elderly\service\CommunityService.class
+com\community\elderly\security\CryptoUtil.class
+com\community\elderly\model\DomainModels$Activity.class
+com\community\elderly\model\DomainModels.class
+com\community\elderly\security\RequestSignInterceptor.class

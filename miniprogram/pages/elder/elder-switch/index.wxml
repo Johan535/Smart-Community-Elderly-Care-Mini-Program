@@ -1,0 +1,11 @@
+<view class="container elder-theme {{largeTextMode ? 'large-text' : ''}}">
+  <view class="role-banner">老人/家属端</view>
+  <view class="guide">点击“切换为当前老人”后，其他页面会默认使用该老人信息。</view>
+  <view class="card">
+    <view class="title">多老人切换管理</view>
+    <block wx:for="{{elders}}" wx:key="id">
+      <view>{{item.name}}（{{item.age}}岁）</view>
+      <button size="mini" data-id="{{item.id}}" bindtap="setActive">切换为当前老人</button>
+    </block>
+  </view>
+</view>

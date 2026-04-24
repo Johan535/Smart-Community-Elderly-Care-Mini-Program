@@ -1,0 +1,13 @@
+<view class="container staff-theme">
+  <view class="role-banner">社区工作人员端</view>
+  <view class="guide">建议每日查看一次统计并生成报表，便于跟踪服务质量。</view>
+  <view class="card">
+    <view class="title">数据统计分析（日/周/月报）</view>
+    <view>老人档案数：{{stats.elderCount}}</view>
+    <view>健康记录数：{{stats.healthRecordCount}}</view>
+    <view>服务订单数：{{stats.serviceOrderCount}}</view>
+    <view>紧急求助数：{{stats.emergencyCount}}</view>
+    <view>活动数：{{stats.activityCount}}</view>
+    <button class="btn" bindtap="genReport">生成日/周/月报</button>
+  </view>
+</view>

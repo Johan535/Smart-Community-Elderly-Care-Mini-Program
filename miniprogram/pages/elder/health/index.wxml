@@ -1,0 +1,22 @@
+<view class="container elder-theme {{largeTextMode ? 'large-text' : ''}}">
+  <view class="role-banner">老人/家属端</view>
+  <view class="guide">按“类型 → 数值 → 提醒类型”顺序填写，可更快完成录入。系统会自动做异常预警与风险评估。</view>
+  <view class="card">
+    <view class="title">简易健康风险评估（创新）</view>
+    <view>当前风险等级：{{riskLevel}}</view>
+    <view>{{riskHint}}</view>
+  </view>
+  <view class="card">
+    <view class="title">健康监测管理</view>
+    <input class="input" placeholder="类型：血压/血糖/心率/睡眠/用药" value="{{form.type}}" data-key="type" bindinput="onInput" />
+    <input class="input" placeholder="数值" value="{{form.value}}" data-key="value" bindinput="onInput" />
+    <input class="input" placeholder="提醒类型" value="{{form.reminderType}}" data-key="reminderType" bindinput="onInput" />
+    <button class="btn" type="primary" bindtap="save">录入数据</button>
+  </view>
+  <view class="card">
+    <view class="title">记录列表</view>
+    <block wx:for="{{records}}" wx:key="id">
+      <view>{{item.type}} - {{item.value}} - {{item.recordTime}} {{item.abnormal ? "【异常预警】" : ""}}</view>
+    </block>
+  </view>
+</view>

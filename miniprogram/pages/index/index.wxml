@@ -1,0 +1,8 @@
+<view class="container">
+  <view class="card">
+    <view class="title">请选择使用角色</view>
+    <view class="guide">操作说明：首次使用请先选择身份，再进入对应功能页面。</view>
+    <button class="btn" type="primary" bindtap="goElder">老人/家属端</button>
+    <button class="btn" bindtap="goStaff">社区工作人员端</button>
+  </view>
+</view>

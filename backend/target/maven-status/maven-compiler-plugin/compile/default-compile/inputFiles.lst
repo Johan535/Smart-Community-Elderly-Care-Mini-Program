@@ -1,0 +1,9 @@
+D:\虚拟c盘\Smart-Community-Elderly-Care-Mini-Program\backend\src\main\java\com\community\elderly\config\WebMvcConfig.java
+D:\虚拟c盘\Smart-Community-Elderly-Care-Mini-Program\backend\src\main\java\com\community\elderly\controller\CommunityController.java
+D:\虚拟c盘\Smart-Community-Elderly-Care-Mini-Program\backend\src\main\java\com\community\elderly\model\DomainModels.java
+D:\虚拟c盘\Smart-Community-Elderly-Care-Mini-Program\backend\src\main\java\com\community\elderly\repository\MemoryRepository.java
+D:\虚拟c盘\Smart-Community-Elderly-Care-Mini-Program\backend\src\main\java\com\community\elderly\security\CryptoUtil.java
+D:\虚拟c盘\Smart-Community-Elderly-Care-Mini-Program\backend\src\main\java\com\community\elderly\security\RequestSignInterceptor.java
+D:\虚拟c盘\Smart-Community-Elderly-Care-Mini-Program\backend\src\main\java\com\community\elderly\security\RoleAuthInterceptor.java
+D:\虚拟c盘\Smart-Community-Elderly-Care-Mini-Program\backend\src\main\java\com\community\elderly\service\CommunityService.java
+D:\虚拟c盘\Smart-Community-Elderly-Care-Mini-Program\backend\src\main\java\com\community\elderly\SmartElderlyApplication.java

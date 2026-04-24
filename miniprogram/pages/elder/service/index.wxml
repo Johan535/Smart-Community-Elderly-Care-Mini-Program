@@ -1,0 +1,18 @@
+<view class="container elder-theme {{largeTextMode ? 'large-text' : ''}}">
+  <view class="role-banner">老人/家属端</view>
+  <view class="guide">先提交预约，再在下方查看订单状态，最后填写评价或投诉建议。</view>
+  <view class="card">
+    <view class="title">生活服务申请</view>
+    <input class="input" placeholder="服务类型：助餐/助医/代购/护理/维修" value="{{form.serviceType}}" data-key="serviceType" bindinput="onInput" />
+    <input class="input" placeholder="预约时间" value="{{form.timeSlot}}" data-key="timeSlot" bindinput="onInput" />
+    <input class="input" placeholder="需求描述" value="{{form.detail}}" data-key="detail" bindinput="onInput" />
+    <button class="btn" type="primary" bindtap="submitOrder">提交预约</button>
+  </view>
+  <view class="card">
+    <view class="title">订单状态 / 评价投诉</view>
+    <block wx:for="{{orders}}" wx:key="id">
+      <view>{{item.serviceType}} - {{item.status}}</view>
+      <input class="input" placeholder="评价或投诉" data-id="{{item.id}}" bindblur="onFeedback" />
+    </block>
+  </view>
+</view>

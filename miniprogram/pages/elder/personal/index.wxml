@@ -1,0 +1,22 @@
+<view class="container elder-theme {{largeTextMode ? 'large-text' : ''}}">
+  <view class="role-banner">老人/家属端</view>
+  <view class="guide">填写老人基础信息后点保存，再按下方按钮进入各功能。</view>
+  <button class="btn" bindtap="toggleLargeTextMode">{{largeTextMode ? "关闭大字模式" : "开启大字模式"}}</button>
+  <view class="card">
+    <view class="title">个人与老人信息管理</view>
+    <input class="input" placeholder="老人姓名" value="{{form.name}}" data-key="name" bindinput="onInput" />
+    <input class="input" placeholder="年龄" value="{{form.age}}" data-key="age" bindinput="onInput" />
+    <input class="input" placeholder="性别" value="{{form.gender}}" data-key="gender" bindinput="onInput" />
+    <input class="input" placeholder="紧急联系人" value="{{form.emergencyContact}}" data-key="emergencyContact" bindinput="onInput" />
+    <button class="btn" type="primary" bindtap="chooseImage">上传老人照片</button>
+    <button class="btn" type="primary" bindtap="save">保存信息</button>
+  </view>
+  <view class="card">
+    <view class="title">快捷功能入口</view>
+    <button class="btn" bindtap="goSwitch">多老人切换</button>
+    <button class="btn" bindtap="goHealth">健康监测管理</button>
+    <button class="btn" bindtap="goService">生活服务申请</button>
+    <button class="btn" bindtap="goEmergency">紧急求助</button>
+    <button class="btn" bindtap="goActivity">活动与社交</button>
+  </view>
+</view>

@@ -1,0 +1,11 @@
+<view class="container staff-theme">
+  <view class="role-banner">社区工作人员端</view>
+  <view class="guide">查看订单后点击“派单处理中”，可快速推进服务状态。</view>
+  <view class="card">
+    <view class="title">服务管理（接单派单/状态/投诉）</view>
+    <block wx:for="{{orders}}" wx:key="id">
+      <view>{{item.id}} - {{item.serviceType}} - {{item.status}}</view>
+      <button size="mini" data-id="{{item.id}}" bindtap="dispatch">派单处理中</button>
+    </block>
+  </view>
+</view>
